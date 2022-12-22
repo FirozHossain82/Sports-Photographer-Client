@@ -1,0 +1,50 @@
+[
+    {
+      "_id": "638780430122ab2d350b8e77",
+      "img": "https://i.ibb.co/FqnLzpZ/bangladeshcricket.jpg",
+      "title": "Cricket Games Photography",
+      "service_id": "01",
+      "description": "The Bangladesh men's national cricket team  popularly known as The  Tigers, is administered by the Bangladesh Cricket Board (BCB). It is a Full Member of the International Cricket Council (ICC) with Test",
+      "serviceCharge": "40.00"
+    },
+    {
+      "_id": "638780430122ab2d350b8e78",
+      "img": "https://i.ibb.co/NtgV34Y/copa-final2.jpg",
+      "title": "Copa America Final 2021 Photography",
+      "service_id": "02",
+      "description": " Argentina won the match 1–0 to clinch their fifteenth Copa America title and first since 1993, giving captain Lionel Messi his first senior international trophy sixteen years into his career and ending a 28-year trophy drought. ",
+      "serviceCharge": "50.00"
+    },
+    {
+      "_id": "638780430122ab2d350b8e79",
+      "img": "https://i.ibb.co/HNwZ7cP/finalisima.jpg",
+      "title": "Finalissima 2022 Wining Moment Photography",
+      "service_id": "03",
+      "description": " Argentina put in a scintillating performance at London's Wembley Stadium on Wednesday to beat Italy 3-0 in the inaugural Finalissima. UEFA.com looks back on their history, how they became South American champions, and checks out their vital statistics.",
+      "serviceCharge": "30.00"
+    },
+    {
+      "_id": "638780430122ab2d350b8e7a",
+      "img": "https://i.ibb.co/86JKMgC/saff-games.jpg",
+      "title": "2022 Saff Womens Chamionship Photography",
+      "service_id": "04",
+      "description": "Bangladesh clinched their maiden SAFF Women's Championship title with a 3-1 victory over Nepal in an entertaining final at the Dasarath Rangasala in Kathmandu on Monday. Krishna Rani Sarkar scored a brace after substitute forward Shamsunnahar Jr had given Bangladesh an early lead to propel Bangladesh to South Asian supremacy, breaking the hearts of the Nepalese who were playing their fifth final in the competition.  ",
+      "serviceCharge": "20.00"
+    },
+    {
+      "_id": "638780430122ab2d350b8e7b",
+      "img": "https://i.ibb.co/wrhRk3F/final1.jpg",
+      "title": "Fifa World Cup 2022 Photography",
+      "service_id": "05",
+      "description": "The 2022 FIFA World Cup final was a football match, the culmination of the 2022 FIFA World Cup, the 22nd edition of FIFA's competition for men's national football teams. The match was played at Lusail Stadium in Lusail, Qatar, on 18 December 2022  and was contested by Argentina and 2018 champions France. Refereed by Szymon Marciniak from Poland, the final took place in front of 88,966 fans. Argentina led 2–0 at half-time, but a hat-trick for France by Kylian Mbappé and an additional goal for Argentina by Lionel Messi left the match tied 3–3 after extra time. Argentina won the ensuing penalty shoot-out 4–2 to earn their third FIFA World Cup title and first since 1986. The final, widely praised for its momentful intensity, has since been commonly viewed as arguably the best FIFA World Cup final ever,and as one of the greatest football matches in history",
+      "serviceCharge": "85.00"
+    },
+    {
+      "_id": "638780430122ab2d350b8e7c",
+      "img": "https://i.ibb.co/hMHC8Cy/hocky-bangladesh.jpg",
+      "title": "Hockey Games Photography",
+      "service_id": "06",
+      "description": " The Hockey Champions Trophy Bangladesh  simply known as HCT Bangladesh and officially as DMCB Hockey Champions Trophy Bangladesh for sponsorship reasons, is a men's professional field hockey league.It is Bangladesh's first ever franchise-based professional field hockey league. It is administrated by BHF and organized by ACE. It was formed in 2022. The inaugural season of the league was held in 2022 ",
+      "serviceCharge": "10.00"
+    }
+  ]
