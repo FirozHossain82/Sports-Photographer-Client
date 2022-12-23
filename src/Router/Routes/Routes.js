@@ -27,11 +27,7 @@ const router = createBrowserRouter([
           path:'/service',
           element:<ServiceSection></ServiceSection>
         },
-        // {
-        //   path: '/service/:id',
-        //   loader: ({ params }) => fetch(`https://farias-cloud-kitchen.onrender.com/services/${params.id}`),
-        //   element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute> 
-        // },
+    
         {
           path: '/service/:id',
           element: <ServiceDetails></ServiceDetails>,

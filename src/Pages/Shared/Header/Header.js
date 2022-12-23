@@ -18,10 +18,10 @@ const Header = () => {
 
     const menuItems = <>
         <li className="font-bold   "><Link to='/'>Home</Link></li>
-        <li className="font-bold   "><Link to='/'>Services</Link></li>
-        <li className="font-bold   "><Link to='/'>Blog</Link></li>
-        <li className="font-bold  "><Link to='/'>My-Reviews</Link></li>
-        <li className="font-bold  "><Link to='/'>Add-Service</Link></li>
+        <li className="font-bold   "><Link to='/service'>Services</Link></li>
+        <li className="font-bold   "><Link to='/blog'>Blog</Link></li>
+        <li className="font-bold  "><Link to='/myreviews'>My-Reviews</Link></li>
+        <li className="font-bold  "><Link to='/addservice'>Add-Service</Link></li>
         {/* <li className="font-semibold text-2xl mr-3 text-violet-700"><Link to='/login'>LogIn</Link></li> */}
         {/* {
             user?.email ?
