@@ -23,6 +23,18 @@ const Header = () => {
         <li className="font-bold  "><Link to='/'>My-Reviews</Link></li>
         <li className="font-bold  "><Link to='/'>Add-Service</Link></li>
         {/* <li className="font-semibold text-2xl mr-3 text-violet-700"><Link to='/login'>LogIn</Link></li> */}
+        {/* {
+            user?.email ?
+                <>
+                    <li className='font-semibold'><Link to='/orders'>Add Services</Link></li>
+                    <li className='font-semibold'><Link to='/orders'>My Reviews</Link></li>
+                    <li className='font-semibold'>
+                        <button onClick={handleSignOut} className='btn-ghost'>Sign Out</button>
+                    </li>
+                </>
+                :
+                <li className='font-semibold btn btn-primary'><Link to='/login'>Login</Link></li>
+        } */}
         <>
                                 {
                                     user?.displayName &&
@@ -63,6 +75,7 @@ const Header = () => {
                                             }>
 
                                             <div className=''>
+                                            
                                                 <Link to='/login' className="bg-violet-600  font-semibold p-3 ml-2 text-white rounded-xl"><span className='text-lg'>SIGN OUT</span></Link>
 
                                             </div>

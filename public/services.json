@@ -1,6 +1,5 @@
 [
     {
-      "_id": "638780430122ab2d350b8e77",
       "img": "https://i.ibb.co/FqnLzpZ/bangladeshcricket.jpg",
       "title": "Cricket Games Photography",
       "service_id": "01",
@@ -8,7 +7,6 @@
       "serviceCharge": "40.00"
     },
     {
-      "_id": "638780430122ab2d350b8e78",
       "img": "https://i.ibb.co/NtgV34Y/copa-final2.jpg",
       "title": "Copa America Final 2021 Photography",
       "service_id": "02",
@@ -16,7 +14,6 @@
       "serviceCharge": "50.00"
     },
     {
-      "_id": "638780430122ab2d350b8e79",
       "img": "https://i.ibb.co/HNwZ7cP/finalisima.jpg",
       "title": "Finalissima 2022 Wining Moment Photography",
       "service_id": "03",
@@ -24,7 +21,6 @@
       "serviceCharge": "30.00"
     },
     {
-      "_id": "638780430122ab2d350b8e7a",
       "img": "https://i.ibb.co/86JKMgC/saff-games.jpg",
       "title": "2022 Saff Womens Chamionship Photography",
       "service_id": "04",
@@ -32,7 +28,6 @@
       "serviceCharge": "20.00"
     },
     {
-      "_id": "638780430122ab2d350b8e7b",
       "img": "https://i.ibb.co/wrhRk3F/final1.jpg",
       "title": "Fifa World Cup 2022 Photography",
       "service_id": "05",
@@ -40,7 +35,6 @@
       "serviceCharge": "85.00"
     },
     {
-      "_id": "638780430122ab2d350b8e7c",
       "img": "https://i.ibb.co/hMHC8Cy/hocky-bangladesh.jpg",
       "title": "Hockey Games Photography",
       "service_id": "06",
