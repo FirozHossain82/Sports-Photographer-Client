@@ -7,6 +7,7 @@ import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
      const { user, logOut} = useContext(AuthContext);
+     
      const handleSignOut = () => {
       logOut()
           .then(() => {
@@ -35,7 +36,7 @@ const Header = () => {
                 :
                 <li className='font-semibold btn btn-primary'><Link to='/login'>Login</Link></li>
         } */}
-        <>
+        
                                 {
                                     user?.displayName &&
                                     <div className='flex justify-end items-center'>
@@ -48,8 +49,8 @@ const Header = () => {
                                         }
                                     </div>
                                 }
-                            </>
-                            <>
+                            
+                            
                                 {
                                     user?.displayName &&
 
@@ -62,9 +63,9 @@ const Header = () => {
                                     </div>
 
                                 }
-                            </>
+                        
 
-                            <>
+                        
                                 {
                                     user?.email ?
                                         <button
@@ -89,7 +90,7 @@ const Header = () => {
                                         </div>
                                 }
 
-                            </>
+                            
     </>
 
     return (
@@ -99,7 +100,7 @@ const Header = () => {
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
-            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-60">
+            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-60 ">
                   {menuItems}
             </ul>
           </div>

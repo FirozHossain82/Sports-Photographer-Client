@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assests/images/login/login.svg';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
@@ -22,6 +23,24 @@ const Login = () => {
             const user = result.user;
             console.log(user)
             form.reset();
+            navigate(from, { replace: true });
+            const currentUser = {
+                uid: user.uid
+            }
+            fetch('http://localhost:5000/jwt', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    localStorage.setItem('token', data.token);
+                    toast.success('Successfully Sign In')
+                    navigate(from, { replace: true });
+                })
         })
         .catch(error => console.error(error));
 

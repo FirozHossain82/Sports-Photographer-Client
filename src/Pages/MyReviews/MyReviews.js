@@ -9,7 +9,7 @@ const MyReviews = () => {
     const [loading, setLoading] = useState(true);
     const [reviewData, setReviewData] = useState([]);
 
-  /*   useEffect(() => {
+    useEffect(() => {
         const url = `http://localhost:5000/user-reviews/${user?.uid}`;
         fetch(url, {
             headers: {
@@ -34,7 +34,7 @@ const MyReviews = () => {
 
     if (loading) {
         return <Loading></Loading>
-    } */
+    } 
 
     const handleDelete = id => {
         fetch(`http://localhost:5000/reviews/${id}`, {

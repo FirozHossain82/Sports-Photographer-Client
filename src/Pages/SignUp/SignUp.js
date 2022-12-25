@@ -1,14 +1,17 @@
 import React, {  useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assests/images/login/login.svg';
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 
 const SignUp = () => {
-    const {createUser} = useContext(AuthContext);
+    const {createUser, updateUser, setLoading} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from.pathname || '/';
+
+
 
     const handleSignUp= event =>{
         event.preventDefault();
@@ -22,9 +25,41 @@ createUser(email, password)
             const user = result.user;
             console.log(user);
             form.reset();
+            const currentUser = {
+                uid: user.uid
+            }
+            fetch(`http://localhost:5000/jwt`, {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })
+                .then(res => res.json())
+                .then(data => {
+                    localStorage.setItem('token', data.token);
+                    handleUpdateUser(name, email);
+                    toast.success('Successfully Log in')
+                    navigate(from, { replace: true });
+                })
         })
         .catch(error => console.error(error));
     }
+
+    const handleUpdateUser = (name, email) => {
+        const userInfo = {
+            displayName: name,
+            email
+        }
+        updateUser(userInfo)
+            .then(() => {
+                setLoading(false);
+                toast.success('User Update');
+            })
+            .catch(err => console.log(err))
+
+    }
+
     return (
         <div>
             <div className="hero w-full my-10">
