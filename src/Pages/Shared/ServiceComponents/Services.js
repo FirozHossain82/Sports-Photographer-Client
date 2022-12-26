@@ -7,8 +7,8 @@ const Services = ({dataSize}) => {
     const [serviceDetails, setServiceDetails] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(()=>{
-        const url =`http://localhost:5000/services${dataSize?`?dataSize=${dataSize}` : '' }`
-        console.log(dataSize);
+        const url =`https://sports-photographer-server-five.vercel.app/services${dataSize?`?dataSize=${dataSize}` : '' }`
+       // console.log(dataSize);
         fetch(url)
             .then(res => res.json())
             .then(data => {

@@ -9,7 +9,7 @@ const Reviews = ({review, setLoading}) => {
             help_count: 1
         }
 
-        fetch(`http://localhost:5000/reviews-help/${review?._id}`, {
+        fetch(`https://sports-photographer-server-five.vercel.app/reviews-help/${review?._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -34,7 +34,7 @@ const Reviews = ({review, setLoading}) => {
             abuse_count: 1
         }
 
-        fetch(`http://localhost:5000/reviews-abuse/${review._id}`, {
+        fetch(`https://sports-photographer-server-five.vercel.app/reviews-abuse/${review._id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

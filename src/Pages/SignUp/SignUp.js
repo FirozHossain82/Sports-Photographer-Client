@@ -28,7 +28,7 @@ createUser(email, password)
             const currentUser = {
                 uid: user.uid
             }
-            fetch(`http://localhost:5000/jwt`, {
+            fetch(`https://sports-photographer-server-five.vercel.app/jwt`, {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

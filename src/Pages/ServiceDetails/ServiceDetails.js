@@ -13,7 +13,7 @@ const ServiceDetails = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/service-reviews/${serviceDetails._id}`;
+        const url = `https://sports-photographer-server-five.vercel.app/service-reviews/${serviceDetails._id}`;
         fetch(url)
             .then((response) => response.json())
             .then((actualData) => {
@@ -52,7 +52,7 @@ const ServiceDetails = () => {
             }
         }
         console.log(review);
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://sports-photographer-server-five.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

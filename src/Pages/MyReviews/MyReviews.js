@@ -10,7 +10,7 @@ const MyReviews = () => {
     const [reviewData, setReviewData] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/user-reviews/${user?.uid}`;
+        const url = `https://sports-photographer-server-five.vercel.app/user-reviews/${user?.uid}`;
         fetch(url, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('token')}`
@@ -37,7 +37,7 @@ const MyReviews = () => {
     } 
 
     const handleDelete = id => {
-        fetch(`http://localhost:5000/reviews/${id}`, {
+        fetch(`https://sports-photographer-server-five.vercel.app/reviews/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
